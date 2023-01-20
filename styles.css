@@ -96,7 +96,7 @@ main{
     height: auto;
     padding-top: 80px;
     padding-bottom: 30px;
-    text-align: center;
+    text-align: center;    
 }
 .main-exchange-container--tittle{
     width: 90%;
@@ -130,7 +130,7 @@ color: var(--black);
     line-height: 1.6rem;
     color: #757575;
 }
-.main-curency-table{
+.main-currency-table{
     width: 70%;
     min-width: 235px;
     max-width: 500px;
@@ -138,7 +138,7 @@ color: var(--black);
     margin: 0 auto;
     font-family: 'Inter', sans-serif;
 }
-.main-curency-table .currency-table--tittle{
+.main-currency-table .currency-table--tittle{
     margin-bottom: 15px;
     font-size: 1.8rem;
     font-weight: bold;
@@ -393,13 +393,21 @@ font-weight: 500;
 line-height: 1.8rem;
 color:#757575;
 }
+.plans-container--slider{
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
 .plans-container--card{
     position: relative;
+    scroll-snap-align: center;
     width: 65%;
-    min-width: 230px;
+    min-width: 190px;
     max-width: 300px;
     height: 250px;
-    margin: 50px auto 0;
+    margin: 50px 5px 0;
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 15px;
@@ -458,4 +466,30 @@ font-weight: 300
     height: 20px;
     background-image: url(./assets/icons/arrow-right.svg);
     vertical-align: text-bottom;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+footer section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+footer .left ul{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+.left li{
+    margin: 10px 0;
+}
+.left a{
+    text-decoration: none;
+    color: var(--just-white);
 }
